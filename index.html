@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="tDO0o2_laTpYzgDkR5dKvu5NddrUtBp2lVB083TruJY" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title" style="display: flex; align-items: center; gap: 10px;">
+            <span class="material-symbols-outlined" style="font-size: 30px; vertical-align: middle;">
+                list_alt
+            </span> 
+            MY Task Manager
+            <span class="current-time"></span>
+        </h1>
+    </header>
+    <form action="">
+        <input type="text" name="task" id="task" placeholder="Enter task" required>
+        <input type="text" name="location" id="location" placeholder="Enter location" required>
+        <button type="submit" class="submit-btn">Add Task</button>
+    </form>
+    <div class="task-container">
+        <!-- task cards -->
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Popins';
+    src: url('./fonts/Poppins/Poppins-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Popins";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #213448;
+}
+
+header {
+    width: 100%;
+    /* position: fixed; */
+    padding: 20px;
+    /* background-color: aliceblue; */
+}
+
+header .title {
+    margin: auto;
+    width: 80%;
+    height: 60px;
+    font-size: 20px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 0 10px black; */
+    border-radius: 2rem;
+    color: lightblue;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+/* form */
+
+form {
+    min-width: 350px;
+    width: 60%;
+    margin: auto;
+    /* background-color: aqua; */
+    padding: 20px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    flex: 1 1 auto;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid rgba(224, 255, 255, 0.363);
+    background-color: #213448;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input[type='text'] {
+    color: #528852;
+    font-size: 18px;
+
+}
+
+.submit-btn {
+    outline: none;
+    padding: 10px;
+    flex: 1 1 auto;
+    background-color: #213448;
+    border: 1px solid #528852;
+    border-radius: 6px;
+    color: #add8e6;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* task-container */
+
+.task-container {
+    width: 100%;
+    min-height: 200px;
+    /* background-color: #528852; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* border: 2px dashed #528852; */
+    border-radius: 10px;
+}
+
+.card {
+    min-width: 300px;
+    width: 350px;
+    border: 1px solid rgba(144, 238, 144, 0.386);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.card .card-head {
+    /* background-color: #213448; */
+    padding: 10px;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /* border-bottom: 1px solid black; */
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.card .card-body {
+    padding: 0px 10px;
+    text-align: justify;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    letter-spacing: 0.2px;
+    word-spacing: -3px;
+    /* line-height: -5px; */
+    color: aliceblue;
+
+}
+
+.card .card-location {
+    padding: 5px 10px;
+    text-align: justify;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    letter-spacing: 0.2px;
+    word-spacing: -3px;
+    color: aliceblue;
+
+}
+
+.card .card-time {
+    padding: 0px 10px;
+    text-align: justify;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    letter-spacing: 0.2px;
+    word-spacing: -3px;
+    color: aliceblue;
+
+}
+
+.card .card-action {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card .card-action button {
+    padding: 10px;
+    color: #528852;
+    background-color: #213448;
+    border: 1px solid #528852;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.card .card-action button:hover {
+    color: crimson;
+    border: 1px solid crimson;
+    transform: translateY(-1px) scale(1.01);
+    cursor: pointer;
+}
+
+
+.taskNumber {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #528852;
+    /* padding: 10px; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:700px) {
+    header .title {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .task-container {
+        padding: 10px;
+    }
+
+    .emptyTasks {
+        width: 100%;
+
+    }
+}
